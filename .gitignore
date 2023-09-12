@@ -1,0 +1,4 @@
+db_backups/
+*.db
+errors.txt
+responses.csv
