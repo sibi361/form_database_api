@@ -12,7 +12,9 @@ const users = {
 const encodedData = encodeURIComponent(JSON.stringify(users));
 // console.log(encodedData);
 
-fetch(`http://127.0.0.1:9876/api?q=${encodedData}`)
+fetch(`http://127.0.0.1:9876/api?q=${encodedData}`, {
+    method: "post",
+})
     .then((res) => res.text())
     .then((res) => console.log(res))
     .catch((err) => console.error(err));

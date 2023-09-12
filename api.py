@@ -46,7 +46,7 @@ def test():
     return ""
 
 
-@app.get("/api")
+@app.post("/api")
 def test(q: str):
     if not q:
         return {"status": "invalid input"}
